@@ -22,7 +22,10 @@
   <meta property="og:site_name" content="Otávio Serafim">
   <meta property="profile:first_name" content="Otávio">
   <meta property="profile:last_name" content="Serafim de Souza Matos">
-  <!-- Quando tiver uma foto ou banner: <meta property="og:image" content="https://otavioserafim.com.br/img/og-image.jpg"> -->
+  <meta property="og:image" content="https://otavioserafim.com.br/foto.jpg">
+  <meta property="og:image:width" content="720">
+  <meta property="og:image:height" content="1080">
+  <meta name="twitter:image" content="https://otavioserafim.com.br/foto.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
@@ -186,15 +189,45 @@
     .social-link:hover { color: var(--accent); border-color: var(--border-hover); background: rgba(110, 168, 254, 0.08); }
     .social-link i { font-size: 1.25rem; }
     .footer-border { border-color: var(--border-subtle) !important; }
+    /* Foto do hero: portrait 720x1080, responsiva e harmoniosa */
+    .hero-photo-wrap {
+      flex-shrink: 0;
+      margin-bottom: 1.5rem;
+    }
+    .hero-photo {
+      width: 100%;
+      height: auto;
+      max-width: 200px;
+      max-height: 280px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 1rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    @media (min-width: 768px) {
+      .hero-photo-wrap { margin-bottom: 0; margin-right: 2rem; }
+      .hero-photo { max-width: 220px; max-height: 320px; }
+    }
+    @media (min-width: 992px) {
+      .hero-photo { max-width: 240px; max-height: 360px; }
+    }
   </style>
 </head>
 <body class="text-light" data-bs-theme="dark">
   <div class="container py-5 py-lg-6 px-4 px-md-5" style="max-width: 900px;">
-    <!-- Header / Hero -->
-    <header class="text-center mb-5 pb-2 animate-in animate-in-1">
-      <h1 class="hero-title display-5 mb-3">Otávio Serafim de Souza Matos</h1>
-      <p class="hero-subtitle mb-2">Desenvolvedor Back-End Pleno focado em performance e escalabilidade</p>
-      <p class="lead hero-subtitle mb-0 small">Engenharia de Sistemas @ UFMG · Belo Horizonte, MG</p>
+    <!-- Header / Hero (foto + texto: empilhado no mobile, lado a lado no desktop) -->
+    <header class="mb-5 pb-2 animate-in animate-in-1" aria-label="Apresentação">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start text-center text-md-start">
+        <div class="hero-photo-wrap">
+          <img src="foto.jpg" alt="Foto de Otávio Serafim" class="hero-photo" width="720" height="1080" fetchpriority="high">
+        </div>
+        <div>
+          <h1 class="hero-title display-5 mb-3">Otávio Serafim de Souza Matos</h1>
+          <p class="hero-subtitle mb-2">Desenvolvedor Back-End Pleno focado em performance e escalabilidade</p>
+          <p class="lead hero-subtitle mb-0 small">Engenharia de Sistemas @ UFMG · Belo Horizonte, MG</p>
+        </div>
+      </div>
     </header>
 
     <main>
