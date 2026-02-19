@@ -3,14 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Otávio Serafim - Desenvolvedor back-end, graduando em Engenharia de Sistemas na UFMG. Portfólio e principais projetos no GitHub.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO primário -->
+  <title>Otávio Serafim | Desenvolvedor Back-End · Engenharia de Sistemas UFMG · Belo Horizonte</title>
+  <meta name="description" content="Portfólio de Otávio Serafim: desenvolvedor back-end Pleno focado em performance e escalabilidade. Engenharia de Sistemas UFMG. JavaScript, Python, Node.js, PostgreSQL, IoT (ESP32, Raspberry Pi Pico). Belo Horizonte, MG.">
   <meta name="author" content="Otávio Serafim de Souza Matos">
-  <title>Otávio Serafim de Souza Matos | Desenvolvedor Back-End</title>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://otavioserafim.com.br/">
+
+  <!-- Open Graph / Facebook, LinkedIn, etc. -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://otavioserafim.com.br/">
+  <meta property="og:title" content="Otávio Serafim | Desenvolvedor Back-End">
+  <meta property="og:description" content="Desenvolvedor back-end Pleno focado em performance e escalabilidade. Engenharia de Sistemas UFMG. Portfólio e projetos em JavaScript, Python, Node.js, IoT. Belo Horizonte, MG.">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Otávio Serafim">
+  <meta property="profile:first_name" content="Otávio">
+  <meta property="profile:last_name" content="Serafim de Souza Matos">
+  <!-- Quando tiver uma foto ou banner: <meta property="og:image" content="https://otavioserafim.com.br/img/og-image.jpg"> -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Otávio Serafim | Desenvolvedor Back-End">
+  <meta name="twitter:description" content="Desenvolvedor back-end Pleno focado em performance e escalabilidade. Engenharia de Sistemas UFMG. Portfólio e IoT. Belo Horizonte, MG.">
+
+  <!-- Tema e identidade -->
+  <meta name="theme-color" content="#0d1117">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="application-name" content="Otávio Serafim">
+
+  <!-- Dados estruturados (JSON-LD) para rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://otavioserafim.com.br/#person",
+        "name": "Otávio Serafim de Souza Matos",
+        "jobTitle": "Desenvolvedor Back-End",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Seu Cliente Oculto Levantamento de Informações"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidade Federal de Minas Gerais",
+          "address": { "@type": "PostalAddress", "addressLocality": "Belo Horizonte", "addressRegion": "MG" }
+        },
+        "knowsAbout": ["JavaScript", "Python", "C++", "Node.js", "Express", "Next.js", "PostgreSQL", "HTML5", "IoT", "ESP32", "Raspberry Pi Pico"],
+        "url": "https://otavioserafim.com.br/",
+        "sameAs": [
+          "https://github.com/OtavioSerafim",
+          "https://www.linkedin.com/in/ot%C3%A1vio-serafim-9576132b2"
+        ],
+        "address": { "@type": "PostalAddress", "addressLocality": "Belo Horizonte", "addressRegion": "MG" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://otavioserafim.com.br/#website",
+        "url": "https://otavioserafim.com.br/",
+        "name": "Otávio Serafim - Portfólio",
+        "description": "Portfólio e projetos de Otávio Serafim, desenvolvedor back-end.",
+        "inLanguage": "pt-BR",
+        "author": { "@id": "https://otavioserafim.com.br/#person" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Recursos críticos -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
   <!-- Devicon (ícones das linguagens e ferramentas) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -18,122 +92,176 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
     :root {
-      --bs-body-font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+      --bs-body-font-family: 'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
+      --bg-deep: #0d1117;
+      --bg-card: rgba(22, 27, 34, 0.6);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(110, 168, 254, 0.5);
       --accent: #6ea8fe;
       --accent-hover: #9ec5fe;
+      --text-muted: rgba(255, 255, 255, 0.6);
     }
-    body { padding-top: 2rem; padding-bottom: 3rem; }
-    .hero-title { font-weight: 700; letter-spacing: -0.02em; }
-    .tool-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 0.875rem;
+    body {
+      background-color: var(--bg-deep) !important;
+      padding-top: 4rem;
+      padding-bottom: 5rem;
+      color: #e6edf3;
     }
-    .tool-badge i { font-size: 1.25em; }
+    .hero-title { font-weight: 700; letter-spacing: -0.03em; line-height: 1.2; }
+    .hero-subtitle { color: var(--text-muted); font-size: 1.1rem; }
+    /* Fade-in animações */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-in { animation: fadeInUp 0.6s ease-out forwards; }
+    .animate-in-1 { animation-delay: 0.1s; opacity: 0; }
+    .animate-in-2 { animation-delay: 0.2s; opacity: 0; }
+    .animate-in-3 { animation-delay: 0.3s; opacity: 0; }
+    .animate-in-4 { animation-delay: 0.4s; opacity: 0; }
+    .animate-in-5 { animation-delay: 0.5s; opacity: 0; }
+    .animate-in-6 { animation-delay: 0.6s; opacity: 0; }
+    /* Glassmorphism cards */
+    .card-glass {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card-glass:hover { border-color: var(--border-hover); box-shadow: 0 0 0 1px var(--border-hover); }
     .card-repo {
       text-decoration: none;
       color: inherit;
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.2s ease, border-color 0.25s ease, box-shadow 0.25s ease;
     }
     .card-repo:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.35);
+      border-color: var(--border-hover) !important;
+      box-shadow: 0 0 0 1px var(--border-hover);
       color: inherit;
     }
     .card-repo .card-title { font-weight: 600; }
     .section-label {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--bs-secondary-color);
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
     }
+    .block-icon { color: var(--accent); font-size: 1.25rem; margin-bottom: 0.5rem; }
+    /* Nuvem de tags / grade minimalista */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0.75rem;
+    }
+    .tool-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      padding: 0.6rem 1rem;
+      background: var(--bg-card);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 0.5rem;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .tool-badge:hover { border-color: var(--border-hover); color: var(--accent); }
+    .tool-badge i { font-size: 1.2em; }
     .social-link {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.5rem 1rem;
+      padding: 0.6rem 1.2rem;
       border-radius: 0.5rem;
       text-decoration: none;
       color: var(--bs-body-color);
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: background 0.2s, border-color 0.2s;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
     }
-    .social-link:hover { color: var(--accent); background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.15); }
+    .social-link:hover { color: var(--accent); border-color: var(--border-hover); background: rgba(110, 168, 254, 0.08); }
     .social-link i { font-size: 1.25rem; }
+    .footer-border { border-color: var(--border-subtle) !important; }
   </style>
 </head>
-<body class="bg-dark text-light" data-bs-theme="dark">
-  <div class="container py-4 py-md-5">
+<body class="text-light" data-bs-theme="dark">
+  <div class="container py-5 py-lg-6 px-4 px-md-5" style="max-width: 900px;">
     <!-- Header / Hero -->
-    <header class="text-center mb-5">
-      <h1 class="hero-title display-5 mb-2">Otávio Serafim de Souza Matos</h1>
-      <p class="lead text-body-tertiary mb-0">Engenharia de Sistemas @ UFMG · Belo Horizonte, MG</p>
+    <header class="text-center mb-5 pb-2 animate-in animate-in-1">
+      <h1 class="hero-title display-5 mb-3">Otávio Serafim de Souza Matos</h1>
+      <p class="hero-subtitle mb-2">Desenvolvedor Back-End Pleno focado em performance e escalabilidade</p>
+      <p class="lead hero-subtitle mb-0 small">Engenharia de Sistemas @ UFMG · Belo Horizonte, MG</p>
     </header>
 
     <main>
       <!-- Sobre -->
-      <section class="mb-5" aria-labelledby="sobre-heading">
-        <h2 class="section-label mb-2" id="sobre-heading">Sobre</h2>
-        <div class="card border-0 bg-dark border-secondary shadow-sm">
-          <div class="card-body p-4 text-light">
-            <p class="card-text mb-3">
-              Graduando em Engenharia de Sistemas pela Universidade Federal de Minas Gerais, de Belo Horizonte, Minas Gerais.
+      <section class="mb-5 pb-2 animate-in animate-in-2" aria-labelledby="sobre-heading">
+        <h2 class="section-label mb-3" id="sobre-heading">Sobre</h2>
+        <div class="card card-glass border-0 shadow-none">
+          <div class="card-body p-4 p-md-5 text-light">
+            <div class="block-icon" aria-hidden="true"><i class="bi bi-lightning-charge-fill"></i></div>
+            <p class="card-text mb-4">
+              Sou o principal desenvolvedor back-end na <strong>Seu Cliente Oculto Levantamento de Informações</strong>, garantindo disponibilidade de dados em tempo real mesmo com cálculos complexos sobre milhares de registros.
             </p>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-2"><strong>Trabalho:</strong> Desenvolvedor back-end Pleno na Seu Cliente Oculto Levantamento de Informações.</li>
-              <li class="mb-2"><strong>Aprendendo:</strong> ReactJS.</li>
-              <li><strong>No tempo livre:</strong> videogame e estudos.</li>
-            </ul>
+            <div class="block-icon" aria-hidden="true"><i class="bi bi-mortarboard-fill"></i></div>
+            <p class="card-text mb-4">
+              Com muito orgulho, construo minha base analítica no curso de <strong>Engenharia de Sistemas na UFMG</strong>, em Belo Horizonte — onde combino rigor técnico com visão de sistemas.
+            </p>
+            <div class="block-icon" aria-hidden="true"><i class="bi bi-cpu-fill"></i></div>
+            <p class="card-text mb-0">
+              Estou imerso em <strong>IoT</strong>: programando <strong>ESP32</strong>, <strong>Raspberry Pi Pico</strong> e aprendendo soldagem de circuitos. No tempo livre, videogame e estudos.
+            </p>
           </div>
         </div>
       </section>
 
       <!-- Linguagens e ferramentas -->
-      <section class="mb-5" aria-labelledby="ferramentas-heading">
+      <section class="mb-5 pb-2 animate-in animate-in-3" aria-labelledby="ferramentas-heading">
         <h2 class="section-label mb-3" id="ferramentas-heading">Linguagens e ferramentas</h2>
-        <div class="d-flex flex-wrap gap-2">
-          <span class="tool-badge badge bg-dark text-light border border-secondary py-2 px-3 rounded-pill"><i class="devicon-cplusplus-plain" aria-hidden="true"></i> C++</span>
-          <span class="tool-badge badge bg-dark text-light border border-secondary py-2 px-3 rounded-pill"><i class="devicon-python-plain" aria-hidden="true"></i> Python</span>
-          <span class="tool-badge badge bg-dark text-light border border-secondary py-2 px-3 rounded-pill"><i class="devicon-javascript-plain" aria-hidden="true"></i> Javascript</span>
-          <span class="tool-badge badge bg-dark text-light border border-secondary py-2 px-3 rounded-pill"><i class="devicon-react-plain" aria-hidden="true"></i> React</span>
-          <span class="tool-badge badge bg-dark text-light border border-secondary py-2 px-3 rounded-pill"><i class="devicon-express-original" aria-hidden="true"></i> Express</span>
-          <span class="tool-badge badge bg-dark text-light border border-secondary py-2 px-3 rounded-pill"><i class="devicon-nextjs-plain" aria-hidden="true"></i> Next.JS</span>
-          <span class="tool-badge badge bg-dark text-light border border-secondary py-2 px-3 rounded-pill"><i class="devicon-html5-plain" aria-hidden="true"></i> HTML5</span>
-          <span class="tool-badge badge bg-dark text-light border border-secondary py-2 px-3 rounded-pill"><i class="devicon-postgresql-plain" aria-hidden="true"></i> Postgres</span>
+        <div class="tools-grid">
+          <span class="tool-badge"><i class="devicon-cplusplus-plain" aria-hidden="true"></i> C++</span>
+          <span class="tool-badge"><i class="devicon-python-plain" aria-hidden="true"></i> Python</span>
+          <span class="tool-badge"><i class="devicon-javascript-plain" aria-hidden="true"></i> JavaScript</span>
+          <span class="tool-badge"><i class="devicon-react-plain" aria-hidden="true"></i> React</span>
+          <span class="tool-badge"><i class="devicon-express-original" aria-hidden="true"></i> Express</span>
+          <span class="tool-badge"><i class="devicon-nextjs-plain" aria-hidden="true"></i> Next.js</span>
+          <span class="tool-badge"><i class="devicon-html5-plain" aria-hidden="true"></i> HTML5</span>
+          <span class="tool-badge"><i class="devicon-postgresql-plain" aria-hidden="true"></i> PostgreSQL</span>
         </div>
       </section>
 
       <!-- Principais repositórios -->
-      <section class="mb-5" aria-labelledby="repos-heading">
+      <section class="mb-5 pb-2 animate-in animate-in-4" aria-labelledby="repos-heading">
         <h2 class="section-label mb-3" id="repos-heading">Principais repositórios</h2>
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-4">
-            <a href="https://github.com/OtavioSerafim/Pacote-Notificacoes" target="_blank" rel="noopener noreferrer" class="card card-repo h-100 border-0 bg-dark border-secondary shadow-sm text-light">
-              <div class="card-body">
+            <a href="https://github.com/OtavioSerafim/Pacote-Notificacoes" target="_blank" rel="noopener noreferrer" class="card card-repo card-glass h-100 border-0 shadow-none text-light" title="Repositório Pacote-Notificacoes no GitHub">
+              <div class="card-body p-4">
                 <h3 class="card-title h5">Pacote-Notificacoes</h3>
                 <p class="card-text small text-body-secondary">Sistema de notificações em JavaScript com templates reutilizáveis e variáveis dinâmicas (npm package).</p>
-                <span class="small fw-semibold text-info">Ver no GitHub →</span>
+                <span class="small fw-semibold" style="color: var(--accent);">Ver no GitHub <i class="bi bi-arrow-right"></i></span>
               </div>
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <a href="https://github.com/OtavioSerafim/Desafio-Tecnico-Truco" target="_blank" rel="noopener noreferrer" class="card card-repo h-100 border-0 bg-dark border-secondary shadow-sm text-light">
-              <div class="card-body">
+            <a href="https://github.com/OtavioSerafim/Desafio-Tecnico-Truco" target="_blank" rel="noopener noreferrer" class="card card-repo card-glass h-100 border-0 shadow-none text-light" title="Repositório Desafio-Tecnico-Truco no GitHub">
+              <div class="card-body p-4">
                 <h3 class="card-title h5">Desafio-Tecnico-Truco</h3>
                 <p class="card-text small text-body-secondary">Site sobre Truco Mineiro com Django, Bootstrap e jogo contra robô (API Deck of Cards).</p>
-                <span class="small fw-semibold text-info">Ver no GitHub →</span>
+                <span class="small fw-semibold" style="color: var(--accent);">Ver no GitHub <i class="bi bi-arrow-right"></i></span>
               </div>
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <a href="https://github.com/OtavioSerafim/card-creator" target="_blank" rel="noopener noreferrer" class="card card-repo h-100 border-0 bg-dark border-secondary shadow-sm text-light">
-              <div class="card-body">
+            <a href="https://github.com/OtavioSerafim/card-creator" target="_blank" rel="noopener noreferrer" class="card card-repo card-glass h-100 border-0 shadow-none text-light" title="Repositório card-creator no GitHub">
+              <div class="card-body p-4">
                 <h3 class="card-title h5">card-creator</h3>
                 <p class="card-text small text-body-secondary">Automação em Python: transforma PDF de especificação em issues no GitHub e GitHub Project v2.</p>
-                <span class="small fw-semibold text-info">Ver no GitHub →</span>
+                <span class="small fw-semibold" style="color: var(--accent);">Ver no GitHub <i class="bi bi-arrow-right"></i></span>
               </div>
             </a>
           </div>
@@ -141,15 +269,15 @@
       </section>
 
       <!-- Redes sociais -->
-      <section class="mb-5" aria-labelledby="redes-heading">
+      <section class="mb-5 animate-in animate-in-5" aria-labelledby="redes-heading">
         <h2 class="section-label mb-3" id="redes-heading">Redes sociais</h2>
         <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
-          <a href="https://www.linkedin.com/in/ot%C3%A1vio-serafim-9576132b2" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
-            <i class="bi bi-linkedin"></i>
+          <a href="https://www.linkedin.com/in/ot%C3%A1vio-serafim-9576132b2" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn de Otávio Serafim">
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
             <span>LinkedIn</span>
           </a>
-          <a href="https://github.com/OtavioSerafim" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
-            <i class="bi bi-github"></i>
+          <a href="https://github.com/OtavioSerafim" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub de Otávio Serafim">
+            <i class="bi bi-github" aria-hidden="true"></i>
             <span>GitHub</span>
           </a>
         </div>
@@ -157,12 +285,12 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-center pt-4 border-top border-secondary">
-      <span class="text-body-secondary">© 2025 Otávio Serafim</span>
+    <footer class="text-center pt-5 mt-2 border-top footer-border animate-in animate-in-6">
+      <span class="text-body-secondary small">© 2025 Otávio Serafim</span>
     </footer>
   </div>
 
-  <!-- Bootstrap 5 JS (opcional: para componentes interativos) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Bootstrap 5 JS (carregamento diferido para não bloquear parsing) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
 </body>
 </html>
