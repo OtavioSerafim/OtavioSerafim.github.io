@@ -173,6 +173,8 @@
       transition: border-color 0.2s ease, color 0.2s ease;
     }
     .tool-badge:hover { border-color: var(--border-hover); color: var(--accent); }
+    a.tool-badge { text-decoration: none; color: inherit; }
+    a.tool-badge:hover { color: var(--accent); }
     .tool-badge i { font-size: 1.2em; }
     .social-link {
       display: inline-flex;
@@ -256,14 +258,16 @@
       <section class="mb-5 pb-2 animate-in animate-in-3" aria-labelledby="ferramentas-heading">
         <h2 class="section-label mb-3" id="ferramentas-heading">Linguagens e ferramentas</h2>
         <div class="tools-grid">
-          <span class="tool-badge"><i class="devicon-cplusplus-plain" aria-hidden="true"></i> C++</span>
-          <span class="tool-badge"><i class="devicon-python-plain" aria-hidden="true"></i> Python</span>
-          <span class="tool-badge"><i class="devicon-javascript-plain" aria-hidden="true"></i> JavaScript</span>
-          <span class="tool-badge"><i class="devicon-react-plain" aria-hidden="true"></i> React</span>
-          <span class="tool-badge"><i class="devicon-express-original" aria-hidden="true"></i> Express</span>
-          <span class="tool-badge"><i class="devicon-nextjs-plain" aria-hidden="true"></i> Next.js</span>
-          <span class="tool-badge"><i class="devicon-html5-plain" aria-hidden="true"></i> HTML5</span>
-          <span class="tool-badge"><i class="devicon-postgresql-plain" aria-hidden="true"></i> PostgreSQL</span>
+          <a href="https://isocpp.org/" target="_blank" rel="noopener noreferrer" class="tool-badge" title="Site oficial do C++"><i class="devicon-cplusplus-plain" aria-hidden="true"></i> C++</a>
+          <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" class="tool-badge" title="Site oficial do Python"><i class="devicon-python-plain" aria-hidden="true"></i> Python</a>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" class="tool-badge" title="JavaScript na MDN"><i class="devicon-javascript-plain" aria-hidden="true"></i> JavaScript</a>
+          <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" class="tool-badge" title="Site oficial do React"><i class="devicon-react-plain" aria-hidden="true"></i> React</a>
+          <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" class="tool-badge" title="Site oficial do Express"><i class="devicon-express-original" aria-hidden="true"></i> Express</a>
+          <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" class="tool-badge" title="Site oficial do Next.js"><i class="devicon-nextjs-plain" aria-hidden="true"></i> Next.js</a>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="tool-badge" title="HTML na MDN"><i class="devicon-html5-plain" aria-hidden="true"></i> HTML5</a>
+          <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer" class="tool-badge" title="Site oficial do PostgreSQL"><i class="devicon-postgresql-plain" aria-hidden="true"></i> PostgreSQL</a>
+          <a href="https://godotengine.org/" target="_blank" rel="noopener noreferrer" class="tool-badge" title="Site oficial do Godot Engine"><i class="devicon-godot-plain" aria-hidden="true"></i> Godot</a>
+          <a href="https://www.pygame.org/" target="_blank" rel="noopener noreferrer" class="tool-badge" title="Site oficial do pygame"><i class="bi bi-controller" aria-hidden="true"></i> pygame</a>
         </div>
       </section>
 
@@ -281,10 +285,10 @@
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <a href="https://github.com/OtavioSerafim/Desafio-Tecnico-Truco" target="_blank" rel="noopener noreferrer" class="card card-repo card-glass h-100 border-0 shadow-none text-light" title="Repositório Desafio-Tecnico-Truco no GitHub">
+            <a href="https://github.com/OtavioSerafim/TP2-APPOO" target="_blank" rel="noopener noreferrer" class="card card-repo card-glass h-100 border-0 shadow-none text-light" title="Repositório TP2-APPOO no GitHub">
               <div class="card-body p-4">
-                <h3 class="card-title h5">Desafio-Tecnico-Truco</h3>
-                <p class="card-text small text-body-secondary">Site sobre Truco Mineiro com Django, Bootstrap e jogo contra robô (API Deck of Cards).</p>
+                <h3 class="card-title h5">TP2-APPOO — Engrenada Hero</h3>
+                <p class="card-text small text-body-secondary">Protótipo de jogo rítmico em Python + pygame para a disciplina APPOO: arquitetura OOP, cenas, SQLite e gameplay com notas e ranking.</p>
                 <span class="small fw-semibold" style="color: var(--accent);">Ver no GitHub <i class="bi bi-arrow-right"></i></span>
               </div>
             </a>
